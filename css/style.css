@@ -1988,6 +1988,7 @@ ul {
   align-items: center;
   z-index: 6;
   margin-top: 26px;
+  position: absolute;
 }
 
 .section-services-list {
