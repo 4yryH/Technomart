@@ -1,9 +1,11 @@
 let cartAdd = document.querySelector('.modal-cart-add')
 let openCartAdd = document.querySelectorAll('.product-buy')
 let closeCartAdd = document.querySelector('.close-modal-add')
+let continueCartAdd = document.querySelector('.modal-continue')
+
+console.log(continueCartAdd)
 
 for (let i = 0; i < openCartAdd.length; i++) {
-    console.log(openCartAdd[i])
     openCartAdd[i].addEventListener('click', function (evt) {
         evt.preventDefault()
         cartAdd.classList.add('show-modal-cart')
@@ -11,6 +13,10 @@ for (let i = 0; i < openCartAdd.length; i++) {
 }
 
 closeCartAdd.addEventListener('click', function () {
+    cartAdd.classList.remove('show-modal-cart');
+})
+
+continueCartAdd.addEventListener('click', function () {
     cartAdd.classList.remove('show-modal-cart');
 })
 
